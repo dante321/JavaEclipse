@@ -23,9 +23,9 @@ public class ejemplos_lectura {
 			
 			dentroFichero = dentroFichero + aux;
 			suma = suma + i;
-		System.out.println("Dentro del fichero hay "+dentroFichero);
+		
 		}
-	
+		System.out.println("Dentro del fichero hay: "+dentroFichero);
 		System.out.println("La suma de la equivalencia int de todos los caracteres es "+suma);
 		fichero1.close();
 	}
