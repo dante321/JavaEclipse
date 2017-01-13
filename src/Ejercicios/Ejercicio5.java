@@ -5,53 +5,38 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Ejercicio5 {
-	private static Scanner sc;
-
-
-
 	/**
 	 * Hacer un programa que te permita crear fichero y borrarlo.
+	 * En esta ocacion el la propia direccion del proyecto.
 	 * @throws IOException 
 	 */
 	
 	public static void crearFichero(String nombreF) throws IOException{
-		boolean creado = true;
+		
 		File crear = new File("."+"\\"+nombreF);
 		
-		if((creado)&&(crear.createNewFile())){
-			
-			
+		if(crear.createNewFile()){
 			
 			System.out.println("El fichero se creo exitosamente, eres el nuevo Bill Gates :V");
+			
 			
 		}else {
 			System.out.println("No se pudo crear el fichero, deja la programacion :V");
 		}
-		
-		
-		
 	}
 	
 	public static void borrarFichero(String nombreF) throws IOException{
 		boolean borrado =true;
 		File borrar = new File("."+"\\"+nombreF);
 		
-		if((borrado)&&(borrar.delete())){
-			
-			
+		if(borrar.delete()){
+				
 			System.out.println("El fichero se ha borrado, ha parecido un accidente >:B");
 			
 		}else{
 			System.out.println("El fichero no se puedo borrar, es hora de cambiar de profesion");
 		}
-		
-		
-		
-		
 		}
-	
-	
-	
 	public static void main(String[] args) throws IOException {
 		
 		Scanner sc =null;
@@ -82,8 +67,7 @@ public class Ejercicio5 {
 			System.out.println("¿Que fichero quieres borrar?");
 			borrar = sc.nextLine();
 			
-			borrarFichero(borrar);
-			
+			borrarFichero(borrar);	
 		}
 		}
 }
