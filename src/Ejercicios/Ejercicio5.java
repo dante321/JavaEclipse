@@ -14,7 +14,7 @@ public class Ejercicio5 {
 	 * @throws IOException 
 	 */
 	
-	public static boolean crearFichero(String nombreF) throws IOException{
+	public static void crearFichero(String nombreF) throws IOException{
 		boolean creado = true;
 		File crear = new File("."+"\\"+nombreF);
 		
@@ -29,7 +29,7 @@ public class Ejercicio5 {
 		}
 		
 		
-		return creado;
+		
 	}
 	
 	public static void borrarFichero(String nombreF) throws IOException{

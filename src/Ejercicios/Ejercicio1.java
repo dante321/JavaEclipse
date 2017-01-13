@@ -26,14 +26,12 @@ Obligatorio para todo el mundo*/
 			
 			carac_actual=frase.charAt(i);
 			if (carac_actual==' '){//Cada vez que se encuentre con un espacio pasara a la siguiente posicion de caracter.
-				carac_actual++;
 				}else{
 					frase_aux = frase_aux + carac_actual;//La palabra vacia va sumando una a una cada caracter sin espacios.
 				}
 			
-			fraseSinEspacios = frase_aux;//Cada vez que se suma un caracter la palabra final se guarda.
 		}
-		
+		fraseSinEspacios = frase_aux;//Cada vez que se suma un caracter la palabra final se guarda.
 		
 		return fraseSinEspacios;
 	}
