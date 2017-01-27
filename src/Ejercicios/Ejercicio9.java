@@ -106,18 +106,17 @@ public class Ejercicio9 {
 		File file2 = new File ("C:\\Users\\Alumno\\git\\JavaEclipse\\src\\Ejercicios\\Contraseñas");
 		BufferedReader comprobarUsr = new BufferedReader(new FileReader(file));
 		BufferedReader comprobarPass = new BufferedReader(new FileReader(file2));
-		
-		System.out.println("Introduzca su nombre de usuario:");
-		String name = sc.nextLine();
-		System.out.println("Introduzca su contraseña:");
-		String pass = sc.nextLine();
-		
+	
 		
 			auxName = comprobarUsr.readLine();
 			auxPass = comprobarPass.readLine();
 			
 			while(contador<4){
 			
+				System.out.println("Introduzca su nombre de usuario:");
+				String name = sc.nextLine();
+				System.out.println("Introduzca su contraseña:");
+				String pass = sc.nextLine();
 				if((auxName.equals(name))&&(auxPass.equals(pass)))
 			{
 				
@@ -127,19 +126,23 @@ public class Ejercicio9 {
 				System.out.println("Nombre de usuario o contraseña incorrecto, intenta otra vez");
 				
 				System.out.println("Tienes 3 intentos como maximo y estas en el intento NRO "+contador);
+				contador++;
 				
-				acceder();
 				
 				
+				
+				if(contador>=4){
+					System.exit(1);
+				}
 				
 			}
-				contador++;
+				
 			comprobarPass.close();
 			comprobarUsr.close();
 			
 			
 		}
-		
+			
 	}
 	
 	
