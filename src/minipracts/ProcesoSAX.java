@@ -11,7 +11,8 @@ import org.xml.sax.helpers.XMLReaderFactory;
 public class ProcesoSAX {
 
 	public static void main(String[] args) {  
-        
+//        LibroXML aux=new LibroXML();
+//        Libro aux2= new Libro();
 	      try {  
 	         // Creamos nuestro objeto libro vacío  
 	         Libro libro = new Libro();  
@@ -22,10 +23,14 @@ public class ProcesoSAX {
 	         // Procesamos el xml de ejemplo  
 	         reader.parse(new InputSource(new FileInputStream("libros.xml")));  
 	         
-	         System.out.println(libro.toString());
+	         //System.out.println(libro.toString());
 	         
 	        
-	         
+	       // for (aux2:aux.getListaLibros()) {
+	        	
+	        	
+	        	
+	        
 	      } catch (SAXException e) {  
 	         e.printStackTrace();  
 	      } catch (IOException e) {  
