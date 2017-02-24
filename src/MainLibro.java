@@ -13,7 +13,15 @@ import org.xml.sax.helpers.XMLReaderFactory;
 public class MainLibro {
 	
 	
-	
+	public static void mostrarLibros(){
+		CargarHashmap map = new CargarHashmap();
+
+		for(int i=0;i<map.isbn_libro.size();i++){
+			
+			map.isbn_libro.get(i).toString();
+			
+		}
+	}
 	
 	
 	public static int getNlibros(){
@@ -21,12 +29,6 @@ public class MainLibro {
 		
 		CargarHashmap map = new CargarHashmap();
 		
-//		for(int i=0;i<map.isbn_libro.size();i++){
-//			
-//			map.isbn_libro.toString();
-//			
-//			
-//		}
 		
 		num = map.isbn_libro.size();
 		
